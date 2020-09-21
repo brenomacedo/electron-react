@@ -16,7 +16,7 @@ function createWindow () {
   win.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, "../build/index.html")}`)
 
   // Abrir o DevTools (aba de ferramentas para desenvolvedores).
-  win.webContents.openDevTools()
+  
 }
 
 // Este método será chamado quando Electron terminar de inicializar

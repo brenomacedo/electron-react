@@ -1,14 +1,18 @@
 import React from 'react';
+import { HashRouter, Route, BrowserRouter } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
+import Home from './screens/Home'
+import Screen from './screens/Screen'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>HELLO ALL!</h1>
-      </header>
-    </div>
+    
+     <HashRouter basename="/React">
+        <Route component={Home} path='home' />
+        <Route component={Screen} path='screen' />
+     </HashRouter>
+    
   );
 }
 
